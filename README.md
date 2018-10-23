@@ -1,6 +1,6 @@
-# Cralwers [![Clojars Project](https://img.shields.io/clojars/v/olical/crawlers.svg)](https://clojars.org/olical/crawlers)
+# Crawlers [![Clojars Project](https://img.shields.io/clojars/v/olical/crawlers.svg)](https://clojars.org/olical/crawlers)
 
-Clojure(Script) library that detects bots and crawlers from their user agent strings. Relies on [monperrus/crawler-user-agents][crawler-list-repo] for the regular expressions.
+Clojure(Script) library to identify crawler and bot user agent strings. Relies on [monperrus/crawler-user-agents][crawler-list-repo] for the regular expressions.
 
 ## Unlicenced
 
