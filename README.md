@@ -2,6 +2,22 @@
 
 Clojure(Script) library to identify crawler and bot user agent strings. Relies on [monperrus/crawler-user-agents][crawler-list-repo] for the regular expressions.
 
+## Usage
+
+```clojure
+(require '[crawlers.detector :as crawlers])
+
+;; This isn't a crawler.
+(time (crawlers/crawler? "Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0"))
+;; "Elapsed time: 0.214012 msecs"
+;; => nil
+
+;; This is!
+(time (crawlers/crawler? "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36"))
+;; "Elapsed time: 0.056963 msecs"
+;; => "Googlebot/"
+```
+
 ## Unlicenced
 
 Find the full [unlicense][] in the `UNLICENSE` file, but here's a snippet.

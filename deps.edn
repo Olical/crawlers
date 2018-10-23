@@ -1,1 +1,8 @@
-{:deps {org.clojure/clojure {:mvn/version "1.9.0"}}}
+{:deps
+ {org.clojure/clojure {:mvn/version "1.9.0"}}
+
+ :aliases
+ {:fetch
+  {:extra-deps
+   {cheshire {:mvn/version "5.8.1"}}
+   :main-opts ["-m" "crawlers.fetcher"]}}}
