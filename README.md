@@ -20,13 +20,11 @@ Clojure(Script) library to identify crawler and bot user agent strings. Relies o
 
 ## Updating
 
-The list of expressions is fetched from [`crawler-user-agents.json`][json-source] so it needs to be periodically synchronised. You can submit an update to the regular expression list by executing:
+The list of expressions is fetched from [`crawler-user-agents.json`][json-source] so it needs to be occasionally synchronised.
 
-```bash
-clj -Afetch
-```
+You can submit an update to the regular expression list by executing `clj -Afetch` and pasting the resulting vector in `src/crawlers/detector.cljc`.
 
-And pasting the resulting vector in `src/crawlers/detector.cljc`. The last update was performed at `Tue 23 Oct 11:46:14 BST 2018`. Pull requests to update this are welcome.
+The last update was performed at `Tue 23 Oct 11:46:14 BST 2018`. Pull requests to update this are welcome.
 
 ## Unlicenced
 
